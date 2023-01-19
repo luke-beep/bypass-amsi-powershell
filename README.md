@@ -1,4 +1,15 @@
 # bypass-amsi-powershell
+<div align="center">
+	<br />
+	<p>
+		<a href="#"><img src="./static/amsiarch.jpg" width="540" alt="AMSI Architecture" /></a>
+	</p>
+	<br />
+	<p>
+		<a href="https://discord.gg/ndjNzKCmff"><img src="https://img.shields.io/badge/discord-join-blue?style=flat-square&logo=discord" alt="My Discord server" /></a>
+		<a href="https://github.com/luke-beep"><img src="https://img.shields.io/badge/github-view-blue?style=flat-square&logo=github" alt="My Github profile" /></a>
+    </p>
+</div>
 
 
 AMSI stands for "Antimalware Scan Interface." It is a Microsoft Windows interface that allows antivirus and other security software to scan scripts and other types of content in memory, before they are executed. This allows the security software to detect and prevent the execution of malicious scripts, such as those used by malware or other types of cyber threats. AMSI was introduced in Windows 10 and is also supported in Windows Server 2016 and later versions. This script essentially breaks the AMSI protection by breaking one of the components in the AMSI chain.
@@ -10,7 +21,7 @@ This script can run on any of [these](./static/VERSIONS.md) versions of Windows.
 
 Simply download the [script](./script/bypass-amsi.dll.ps1) and run it in powershell. It will automatically bypass AMSI (Antimalware Scan Interface) and allow you to run any powershell script without being blocked by AMSI (Antimalware Scan Interface).
 
-
+### Why does it work?
 
  
 
