@@ -4,7 +4,6 @@ AMSI stands for "Antimalware Scan Interface." It is a Microsoft Windows interfac
 
 This script can run on any of [these](./static/VERSIONS.md) versions of Windows.
 
-## Usage
 AMSI Bypass created By Maor Korkos https://i.blackhat.com/Asia-22/Friday-Materials/AS-22-Korkos-AMSI-and-Bypass.pdf
 
 
