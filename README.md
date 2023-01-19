@@ -2,7 +2,7 @@
 <div align="center">
 	<br />
 	<p>
-		<a href="#"><img src="./static/amsiarch.jpg" width="540" alt="AMSI Architecture" /></a>
+		<a href="#"><img src="./static/code.png" width="2156" alt="AMSI Architecture" /></a>
 	</p>
 	<br />
 	<p>
