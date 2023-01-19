@@ -26,9 +26,7 @@ Simply download the [script](./script/bypass-amsi.dll.ps1) and run it in powersh
 
 By breaking one of the chains as in this architecture, it allows the script to run without being blocked by AMSI (Antimalware Scan Interface). 
 
-<a href="#"><img src="./static/amsiarch.png" width="540" alt="AMSI Architecture" /></a>
-
- 
+<a href="#"><img src="./static/amsiarch.png" width="540" alt="AMSI Architecture" /></a> 
 
 ### 1st Method by Maor Korkos
 ---
@@ -71,3 +69,10 @@ $AmsiProviderScanFunc = [System.Runtime.InteropServices.Marshal]::ReadInt32($Ant
 ```
 
 AMSI (Antimalware Scan Interface) Bypass created By Maor Korkos https://i.blackhat.com/Asia-22/Friday-Materials/AS-22-Korkos-AMSI-and-Bypass.pdf | Page 51
+
+
+### Showcase
+
+Showcase of this script in action
+
+<a href="#"><img src="./static/amsibreaktutorial.png" width="540" alt="Showcase" /></a>
