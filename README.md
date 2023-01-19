@@ -22,6 +22,11 @@ This script can run on any of [these](./static/VERSIONS.md) versions of Windows.
 Simply download the [script](./script/bypass-amsi.dll.ps1) and run it in powershell. It will automatically bypass AMSI (Antimalware Scan Interface) and allow you to run any powershell script without being blocked by AMSI (Antimalware Scan Interface).
 
 ### Why does it work?
+---
+
+By breaking one of the chains as in this architecture, it allows the script to run without being blocked by AMSI (Antimalware Scan Interface). 
+
+<a href="#"><img src="./static/amsiarch.png" width="540" alt="AMSI Architecture" /></a>
 
  
 

