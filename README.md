@@ -72,6 +72,6 @@ $AmsiProviderScanFunc = [System.Runtime.InteropServices.Marshal]::ReadInt32($Ant
 
 ### Showcase
 
- - Showcase of this script in action:
+ - Showcase of this script in action (old version):
 
 <a href="./static/amsibreaktutorial.png"><img src="./static/amsibreaktutorial.png" width="2560" alt="Showcase" /></a>
