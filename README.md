@@ -8,10 +8,8 @@ This script can run on any of [these](./static/VERSIONS.md) versions of Windows.
 ### Usage
 ---
 
-This script works by breaking the chain in the amsi.dll. This exact script breaks the
+Simply download the [script](./script/bypass-amsi.dll.ps1) and run it in powershell. It will automatically bypass AMSI and allow you to run any powershell script without being blocked by AMSI.
 
-
-AMSI Bypass created By Maor Korkos https://i.blackhat.com/Asia-22/Friday-Materials/AS-22-Korkos-AMSI-and-Bypass.pdf
 
 
  
@@ -53,3 +51,5 @@ $AmsiProviderScanFunc = [System.Runtime.InteropServices.Marshal]::ReadInt32($Ant
 [System.Runtime.InteropServices.Marshal]::Copy($ret_zero, 0, $AmsiProviderScanFunc, 6)
 }
 ```
+
+AMSI Bypass created By Maor Korkos https://i.blackhat.com/Asia-22/Friday-Materials/AS-22-Korkos-AMSI-and-Bypass.pdf
