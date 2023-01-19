@@ -4,7 +4,6 @@
 	<p>
 		<a href="#"><img src="./static/code.png" width="2156" alt="AMSI Architecture" /></a>
 	</p>
-	<br />
 	<p>
 		<a href="https://discord.gg/ndjNzKCmff"><img src="https://img.shields.io/badge/discord-join-blue?style=flat-square&logo=discord" alt="My Discord server" /></a>
 		<a href="https://github.com/luke-beep"><img src="https://img.shields.io/badge/github-view-blue?style=flat-square&logo=github" alt="My Github profile" /></a>
