@@ -75,4 +75,4 @@ AMSI (Antimalware Scan Interface) Bypass created By Maor Korkos https://i.blackh
 
 Showcase of this script in action
 
-<a href="./static/amsibreaktutorial.png"><img src="./static/amsibreaktutorial.png" width="1250" alt="Showcase" /></a>
+<a href="./static/amsibreaktutorial.png"><img src="./static/amsibreaktutorial.png" width="2560" alt="Showcase" /></a>
