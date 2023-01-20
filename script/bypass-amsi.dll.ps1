@@ -1,5 +1,3 @@
-# Requires: Windows 10+
-
 $_class = @" 
 using System;
 using System.Runtime.InteropServices;
